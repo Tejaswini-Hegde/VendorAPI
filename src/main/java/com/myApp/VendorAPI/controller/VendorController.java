@@ -19,7 +19,6 @@ public class VendorController {
 
    @GetMapping("/All")
     public List<CloudVendor> getAllVendor(Integer vendorId){
-       System.out.println("Hello World");
        return vendorService.getAllVendor();
 
     }

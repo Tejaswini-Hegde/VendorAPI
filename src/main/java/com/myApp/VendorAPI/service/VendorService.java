@@ -16,6 +16,12 @@ public class VendorService {
     @Autowired
     VendorRepository vendorRepository;
 
+    // Created this constructor while writing test case
+    public VendorService(VendorRepository vendorRepository) {
+
+        this.vendorRepository = vendorRepository;
+    }
+
     public List<CloudVendor> getAllVendor() {
         return vendorRepository.findAll();
     }
